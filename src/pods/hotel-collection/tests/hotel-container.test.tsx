@@ -1,15 +1,11 @@
 import React from 'react';
-import { renderHook } from '@testing-library/react-hooks';
 import '@testing-library/jest-dom';
-import { useHotelCollection } from 'pods/hotel-collection/hotel-collection.hook';
+import { render } from '@testing-library/react';
+import { HotelCollectionContainer } from '../hotel-collection.container';
 
-describe('login container tests', () => {
-  test('should', async () => {
-    // const { result, waitForNextUpdate } = renderHook(() =>
-    //   useHotelCollection()
-    // );
-    // result.current.loadHotelCollection();
-    // await waitForNextUpdate();
-    // expect(result.current.hotelCollection.length).toEqual(10);
+describe('hotel container tests', () => {
+  test('should render the hotel collection component', async () => {
+    const { getByTestId } = render(<HotelCollectionContainer />);
+    expect(getByTestId('collection')).toBeInTheDocument();
   });
 });

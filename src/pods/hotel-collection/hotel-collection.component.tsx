@@ -22,7 +22,7 @@ export const HotelCollectionComponent: React.FunctionComponent<Props> = (
   const classes = useStyles(props);
 
   return (
-    <div className={classes.listLayout}>
+    <div className={classes.listLayout} data-testid='collection'>
       {hotelCollection.map((hotel) => (
         <HotelCard key={hotel.id} hotel={hotel} />
       ))}
