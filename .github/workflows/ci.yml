@@ -7,7 +7,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
       - name: Install
-        uses: npm install
+        uses: ./npm install
       - name: Build
         uses: npm run build
       - name: Test
