@@ -1,4 +1,4 @@
-export const mockData = [
+export const hotelApiResponse = [
   {
     id: '0248058a-27e4-11e6-ace6-a9876eff01b3',
     type: 'hotel',

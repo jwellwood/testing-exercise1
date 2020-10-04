@@ -2,7 +2,7 @@ import * as React from 'react';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import { HotelCard } from '../hotel-card.component';
-import { hotels } from './mock-data';
+import { hotels } from 'common/mock/hotels.mock';
 
 describe('hotel card tests', () => {
   const props = { ...hotels[0] };

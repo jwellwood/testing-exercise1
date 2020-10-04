@@ -1,8 +1,8 @@
 import { mapFromApiToVm } from '../hotel-collection.mapper';
-import { mockData } from './hotel-mock-data';
+import { hotelApiResponse } from 'common/mock/hotels-response.mock';
 
 describe('hotel collection tests', () => {
-  const hotel = mockData[0];
+  const hotel = hotelApiResponse[0];
   const result = mapFromApiToVm({ ...hotel });
   const resultObject = Object.keys(result);
 

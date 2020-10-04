@@ -2,7 +2,7 @@ import * as React from 'react';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import { HotelCollectionComponent } from '../hotel-collection.component';
-import { hotels } from './mock-data';
+import { hotels } from 'common/mock/hotels.mock';
 
 describe('hotel collection tests', () => {
   test('should render two hotels cards with their names when fed an array of two hotels', () => {
