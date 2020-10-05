@@ -11,8 +11,8 @@ describe('login component tests', () => {
       login: '',
       password: '',
     },
-    showSnackbar: false,
   };
+
   test('should render "Login" in two places', () => {
     render(<LoginComponent {...props} />);
     const titleElem = screen.getAllByText('Login');

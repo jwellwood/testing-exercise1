@@ -1,7 +1,7 @@
 import * as React from 'react';
+import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import '@testing-library/jest-dom';
 import { fireEvent, render } from '@testing-library/react';
 import { alertReducer } from 'reducers';
 import SnackbarAlert from 'common/components/snackbar/snackbar.component';
@@ -29,7 +29,7 @@ describe('SnackbarAlert tests', () => {
     expect(queryByText(warningText)).toBe(null);
   });
   test('should set visibility false onClick', () => {
-    const { getByRole } = render(
+    const { getByRole, queryByRole } = render(
       <Provider store={mockStore}>
         <SnackbarAlert {...props} />
       </Provider>
