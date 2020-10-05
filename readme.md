@@ -4,7 +4,11 @@ My answers to the Lemoncode masters testing module exercises.
 
 ### The task
 
-- Add and configure necessary testing libraries
+Add the necessary tests to a project that has already been created
+
+### Steps
+
+- Add and configure necessary testing libraries (jest, react-testing-library, etc.)
 - Add jest debugging configs for VSCode
 - Add coverage configuration
 - Add snapshot tests for Material UI components
