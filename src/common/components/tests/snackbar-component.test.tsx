@@ -29,7 +29,7 @@ describe('SnackbarAlert tests', () => {
     expect(queryByText(warningText)).toBe(null);
   });
   test('should set visibility false onClick', () => {
-    const { getByRole, queryByRole } = render(
+    const { getByRole } = render(
       <Provider store={mockStore}>
         <SnackbarAlert {...props} />
       </Provider>
